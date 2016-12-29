@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+             tools:context="com.example.group.teamproject1.module.cookbook.NewsSecondFragment">
+
+   <android.support.v7.widget.Toolbar
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_vertical">
+
+       <Button
+           android:id="@+id/news_static"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:background="@mipmap/cook_static"/>
+
+       <TextView
+           android:id="@+id/news_title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:text="标题"/>
+
+       <Button
+           android:id="@+id/news_share"
+           android:layout_width="25dp"
+           android:layout_height="25dp"
+           android:background="@mipmap/share_up"
+           android:layout_alignParentRight="true"/>
+
+       </RelativeLayout>
+
+   </android.support.v7.widget.Toolbar>
+
+    <HorizontalScrollView
+        android:id="@+id/news_second_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/news_second_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+             tools:context="com.example.group.teamproject1.module.happylife.HappyLifeCateFragment">
+
+  <android.support.v7.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:scrollbars="horizontal"
+      android:layout_marginTop="10dp"
+      android:id="@+id/happylife_cate_logo_recycle_view">
+  </android.support.v7.widget.RecyclerView>
+
+
+  <com.example.group.teamproject1.widget.PullToRefleshRecycleView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="8"
+      android:scrollbars="vertical"
+      android:id="@+id/happylife_cate_recycle_view">
+  </com.example.group.teamproject1.widget.PullToRefleshRecycleView>
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:scrollbars="vertical"
+        android:id="@+id/happylife_cate_recycle_view">
+    </android.support.v7.widget.RecyclerView>-->
+
+
+</LinearLayout>

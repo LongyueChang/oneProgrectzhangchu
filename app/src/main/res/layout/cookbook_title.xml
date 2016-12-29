@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <ImageView
+            android:id="@+id/cookbook_video"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <Button
+            android:id="@+id/cookbook_paly"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/play"/>
+
+    </FrameLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/cookbook_person_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="上课人数：2333"/>
+
+        <ImageView
+            android:id="@+id/cookbook_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/cookbook_person_info"
+            android:layout_marginLeft="200dp"
+            android:src="@drawable/cookbook_collect"/>
+
+
+        <ImageView
+            android:id="@+id/cookbook_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/cookbook_collect"
+            android:src="@mipmap/share"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/rina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="RINA"/>
+
+        <ImageView
+            android:id="@+id/cookbook_rina_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rina"
+            android:layout_marginLeft="280dp"
+            android:onClick="more"
+            android:src="@drawable/cookbook_more"/>
+
+        <TextView
+            android:id="@+id/cookbook_rina_showInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rina"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:text="rinaxians"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/cookbook_sets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="选集"/>
+
+
+        <TextView
+            android:id="@+id/cookbook_set_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/cookbook_sets"
+            android:layout_marginLeft="230dp"
+            android:text="更新至集"/>
+
+        <ImageView
+            android:id="@+id/cookbook_sets_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/cookbook_set_news"
+            android:onClick="more"
+            android:src="@drawable/cookbook_more"/>
+
+
+    </RelativeLayout>
+
+
+    <GridView
+        android:id="@+id/cookbook_gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:numColumns="8"
+        android:columnWidth="20dp"
+        android:stretchMode="columnWidth"/>
+
+    <GridView
+        android:id="@+id/cookbook_gridView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="8"
+        android:columnWidth="20dp"
+        android:visibility="gone"
+        android:stretchMode="columnWidth"></GridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/cookbook_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="厨友赞"/>
+
+        <ImageView
+            android:id="@+id/praise_thumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/praise_select"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/cookbook_gridView_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="6"
+        android:columnWidth="20dp"
+        android:stretchMode="columnWidth"/>
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">teamProject1</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="cook_book_tab_title">
+        <item>推荐</item>
+        <item>食材</item>
+        <item>分类</item>
+    </string-array>
+
+
+    <string-array name="happy_life_tab_title">
+        <item>美食IP</item>
+        <item>健康IP</item>
+    </string-array>
+
+    <string-array name="community_tab_title">
+        <item>关注</item>
+        <item>推荐</item>
+        <item>最新</item>
+    </string-array>
+
+
+</resources>

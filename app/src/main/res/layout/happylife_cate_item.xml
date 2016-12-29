@@ -1,0 +1,84 @@
+<android.support.v7.widget.CardView
+    xmlns:android= "http://schemas.android.com/apk/res/android"
+    xmlns:card_view ="http://schemas.android.com/apk/res-auto"
+    android:id= "@+id/happylife_cardview"
+    android:layout_width= "match_parent"
+    android:layout_height= "wrap_content"
+    card_view:cardUseCompatPadding= "true"
+    >
+
+    <RelativeLayout
+        android:layout_width= "match_parent"
+        android:layout_height= "match_parent"
+        android:orientation= "vertical">
+
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="200dp"
+          android:scaleType="centerCrop"
+          android:src="@mipmap/ic_launcher"
+          android:id="@+id/happylife_cate_image"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/happylife_cate_image"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="-30dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/happylife_cate_logo_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/happylife_cate_title_text"
+            android:text="火把节"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/happylife_cate_image"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/happylife_cate_title_text"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/happylife_cate_updata_text"
+                android:gravity="center"
+                android:text="更新至10集"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/happylife_cate_count_text"
+                android:text="上课人数22222"
+                android:gravity="center"
+                android:layout_below="@+id/happylife_cate_image"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/happylife_cate_logo_text"
+                android:text="悠然天下"
+                android:layout_below="@+id/happylife_cate_image"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
